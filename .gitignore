@@ -1,1 +1,28 @@
-venv/ 
+# Python / Django
+venv/
+.venv/
+__pycache__/
+*.pyc
+db.sqlite3
+
+# Node / React
+node_modules/
+dist/
+
+# Java / Spring Boot
+target/
+*.class
+
+# Kotlin / Android
+.gradle/
+build/
+local.properties
+*.apk
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Secretos
+.env
