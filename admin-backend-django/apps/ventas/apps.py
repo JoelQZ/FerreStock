@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class VentasConfig(AppConfig):
-    name = 'ventas'
+    name = 'apps.ventas'
+    verbose_name = 'Ventas'

@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class UsuariosConfig(AppConfig):
-    name = 'usuarios'
+    name = 'apps.usuarios'
+    verbose_name = 'Usuarios y seguridad'

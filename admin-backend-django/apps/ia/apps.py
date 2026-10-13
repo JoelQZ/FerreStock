@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class IaConfig(AppConfig):
-    name = 'ia'
+    name = 'apps.ia'
+    verbose_name = 'Predicción IA'
