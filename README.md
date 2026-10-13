@@ -55,7 +55,8 @@ FerreStock/
 ├── .gitignore
 │
 ├── database/
-│   └── diagrama-er.png          ← modelo entidad-relación (20 tablas)
+│   ├── diagrama-er.png          ← modelo entidad-relación (20 tablas)
+│   └── seeds.sql                ← datos iniciales: roles y unidades de medida
 │
 ├── admin-backend-django/        ← ADMINISTRACIÓN · API REST
 │   ├── manage.py
@@ -182,7 +183,7 @@ Además de las 20 tablas del proyecto, Django crea sus tablas internas (`django_
 | Python | 3.14 |
 | Node.js | 24 LTS |
 | JDK | 21 (el de IntelliJ o Eclipse Temurin) |
-| MySQL | 8.4 LTS + MySQL Workbench |
+| MySQL | 9.2 (Django 6.1 exige 8.4 o superior) + MySQL Workbench 8.0 |
 | IntelliJ IDEA | Para Spring Boot |
 | Android Studio | Para la app Kotlin |
 
@@ -215,10 +216,14 @@ npm run dev
 
 - [x] Estructura base del monorepo con los 5 proyectos
 - [x] Modelo entidad-relación de 20 tablas
-- [ ] Instalar MySQL y configurar Django (`settings.py`, conexión, apps, idioma `es-pe`, zona `America/Lima`)
-- [ ] Modelos de las 20 tablas + primera migración + datos iniciales
-- [ ] Login con JWT
-- [ ] Sprint 1: HU-01, HU-04, HU-05, HU-08, HU-10, HU-11
+- [x] MySQL configurado y Django conectado (`settings.py`, apps, idioma `es-pe`, zona `America/Lima`)
+- [x] Modelos de usuarios y catálogo + primera migración + datos iniciales (`database/seeds.sql`)
+- [x] Login con JWT (`/api/auth/login/`)
+- [x] HU-01: API de productos con validaciones y pruebas automáticas
+- [ ] HU-01: formulario de registro en React admin
+- [ ] HU-05: carrito con IGV en el POS
+- [ ] HU-11: reporte diario con desglose por tipo de pago
+- [ ] Modelos de inventario, ventas, caja, configuración e IA
 
 ## 8. Forma de trabajo (Scrum + Git)
 
