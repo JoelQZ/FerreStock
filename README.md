@@ -220,7 +220,7 @@ npm run dev
 - [x] Modelos de usuarios y catálogo + primera migración + datos iniciales (`database/seeds.sql`)
 - [x] Login con JWT (`/api/auth/login/`)
 - [x] HU-01: API de productos con validaciones y pruebas automáticas
-- [ ] HU-01: formulario de registro en React admin
+- [x] React admin: login JWT, layout estilo Industrial y pantalla de productos (HU-01)
 - [ ] HU-05: carrito con IGV en el POS
 - [ ] HU-11: reporte diario con desglose por tipo de pago
 - [ ] Modelos de inventario, ventas, caja, configuración e IA
